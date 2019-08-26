@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Volumes/DataMac/Android2017/SmartTraffic/googleDirectionLibrary/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sl/values-sl.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 198,
+                    "endOffset": 299
+                },
+                "from": {
+                    "file": "/Users/muiehimura/.android/build-cache/d58cf9989decc81a94f5a6e036756a3050cb4c02/output/res/values-sl/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 198,
+                        "endOffset": 483
+                    }
+                }
+            }
+        ]
+    }
+]

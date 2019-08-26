@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "417258245726",
+    "firebase_url": "https://smart-traffic-e7625.firebaseio.com",
+    "project_id": "smart-traffic-e7625",
+    "storage_bucket": "smart-traffic-e7625.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417258245726:android:538ed7f0e52f9758",
+        "android_client_info": {
+          "package_name": "aplikasiku.navwithdirectionlib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417258245726-apt3r8obv3rl8nk1ar4bmdav5trqeq2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdglpecDD-acOIrePWStVv-Sf2ud0j26E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

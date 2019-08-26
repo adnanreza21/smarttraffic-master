@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="aplikasiku.navwithdirectionlib.SkemaTLbaruActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TL Area"
+        android:layout_marginLeft="4dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <Spinner
+        android:id="@+id/spinnerTLarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/itemArea"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/divider"/>
+
+    <!-- dummy item focusable first -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <EditText
+            android:id="@+id/editTextTLname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TL Name"
+            android:maxLines="1"
+            android:nextFocusUp="@id/editTextTLname"
+            android:nextFocusLeft="@id/editTextTLname" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp">
+            <EditText
+                android:id="@+id/editTextTLloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TL Location" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:textColor="@color/white"
+            android:background="@color/color_button"
+            android:id="@+id/buttonGetLocTL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-75dp"
+            android:text="GPS"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editTextTLlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TL Latitude"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editTextTLlong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TL Longitude"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TL Count"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkBoxTLb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TLb" />
+        <CheckBox
+            android:id="@+id/checkBoxTLs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="TLs" />
+        <CheckBox
+            android:id="@+id/checkBoxTLt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="TLt" />
+        <CheckBox
+            android:id="@+id/checkBoxTLu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="TLu" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/divider"/>
+
+    <Button
+        android:background="@drawable/custom_button_green"
+        android:textColor="@color/white"
+        android:id="@+id/buttonAddTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert TL"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>

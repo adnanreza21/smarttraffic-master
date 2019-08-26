@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="INPUT DATA RS"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ShowImageView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/textview"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/editTextRSname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RS Name"
+                    android:maxLines="1"
+                    android:nextFocusLeft="@id/editTextRSname"
+                    android:nextFocusUp="@id/editTextRSname" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/editTextRSloc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RS Loc"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/editTextRSlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RS Lat"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/editTextRSlong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RS Long"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button_green"
+            android:id="@+id/ButtonChooseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ShowImageView"
+            android:text="@string/choose_image" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button_green"
+            android:id="@+id/ButtonUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/simpan_data_rs" />
+
+    </LinearLayout>
+
+</RelativeLayout>
